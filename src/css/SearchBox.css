@@ -1,0 +1,18 @@
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    border-color: #b9b9b9;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 240px; /* Change the width as needed */
+    height: 20px; /* Change the height as needed */
+    padding: 16px;
+    margin-top: 16px;
+    margin-bottom: 1px;
+}
