@@ -33,6 +33,10 @@ const SearchBox = () => {
     setShowDropdown(false);
   };
 
+  const capitalizeFirstLetter = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   const filteredSuggestions = suggestions.filter((suggestion) =>
     suggestion.toLowerCase().includes(inputText.toLowerCase())
   );
@@ -55,7 +59,7 @@ const SearchBox = () => {
               key={suggestion}
               onClick={() => handleSuggestionClick(suggestion)}
             >
-              {suggestion}
+              {capitalizeFirstLetter(suggestion)}
             </div>
           ))}
         </div>
